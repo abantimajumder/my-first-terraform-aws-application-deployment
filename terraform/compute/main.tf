@@ -108,7 +108,7 @@ resource "aws_launch_template" "frontend_launch_template" {
 
   user_data = base64encode(templatefile("${path.module}/frontend_user_data.sh", {
     project_name = var.project_name
-    backend_alb_dns = aws_lb.backend_alb.dns_name
+    backend_alb_dns = aws_lb.frontend_alb.dns_name
   }))
 
   tag_specifications {
