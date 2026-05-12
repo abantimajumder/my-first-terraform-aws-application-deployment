@@ -1,0 +1,11 @@
+aws_region = "us-east-1"
+environment = "dev"
+project_name = "terraform-aws-application"
+frontend_alb_name = "frontend-alb"
+backend_alb_name = "backend-alb"
+frontend_desired_capacity = 2
+frontend_max_size = 2
+frontend_min_size = 2
+backend_desired_capacity = 2
+backend_max_size = 2
+backend_min_size = 2
